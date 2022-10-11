@@ -1,24 +1,11 @@
 # mrb-desktop
 
-## Project setup
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+This project built on Electron, Vue 3, Electron Builder.
+Unfortunately in this times i don`t use Git, but upload for portfolio.
 ```
 
-### Compiles and minifies for production
 ```
-yarn build
+You can create profiles and auto fill Google forms (which modes was prepared).
+Support multi-task starting.
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
