@@ -1,0 +1,13 @@
+{
+  "name": "Имя",
+  "surname": "Фамилия",
+  "email": "example@mail.com",
+  "numberId": "23456",
+  "sex": "М/Ж",
+  "dateBirth": "10101010",
+  "instagram": "https://www.instagram.com/nickname",
+  "telegram": "@nickname",
+  "address": "Москва, ул. Пушкина, д. Колотушкина",
+  "city": "Москва",
+  "phone": "88008008080"
+}

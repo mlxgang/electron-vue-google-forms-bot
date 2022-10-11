@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+
+начало
+
+*/
+.inputBox {
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app {
+  font-size: 16px;
+  color: aliceblue;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+input:active,
+input:focus,
+select:active,
+select:focus,
+button:active,
+button:focus {
+  outline: none;
+}
+section {
+  margin-top: 95px;
+  padding: 30px 0;
+}
+body {
+  background: #480088;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+header {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  margin: 0 auto;
+
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+}
+#logo {
+  float: left;
+  display: block;
+  height: 60px;
+  width: 260px;
+  background-size: auto 60px;
+  background: url(mlxgang.gif) no-repeat center center;
+}
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+.topButton {
+  color: #7102d0;
+  background-color: #000;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 30px;
+  font-family: Arial;
+  text-align: center;
+
+  height: 67px;
+  border-bottom: solid;
+  border-color: #000;
+  border-width: 3px;
+}
+.topButton.active {
+  border-color: aliceblue;
+}
+.tab {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* создание тасков */
+
+button {
+  height: 30px;
+  width: 100px;
+
+  background-color: #480088;
+  border: 1px solid aliceblue;
+  border-radius: 4px;
+
+  font-size: 14px;
+  color: aliceblue;
+}
+
+/*
+таски
+*/
+#mrb-tasks-list {
+  padding-top: 0px;
+}
+
+#tasksInfo p {
+  font-size: 16px
+}
+#mrb-tasks-list-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  align-items: center;
+  justify-items: center;
+
+  width: 1150px;
+  height: 50px;
+
+  position: fixed;
+  bottom: 0px;
+
+  border: 1px solid aliceblue;
+  border-bottom-style: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #480088;
+  /* background-color: #6c00ca; */
+}
+#tasksContent {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.taskStart,
+.taskDelete,
+.taskPause,
+.topButton,
+button {
+  cursor: pointer;
+}
+.taskStart:active,
+.taskDelete:active,
+.taskPause:active,
+button:active {
+  cursor: grabbing;
+}
+button:disabled,
+button[disabled]{
+  background-color: #44007e;
+  color: #7c7c7c;
+  border: solid 1px #7c7c7c;
+  cursor: not-allowed;
+}
